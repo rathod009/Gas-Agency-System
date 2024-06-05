@@ -1,0 +1,356 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<HTML><HEAD id="HEAD1"  runat="server"><TITLE>Indane Gas - 24 hours OnLine Gas Booking System</TITLE>
+<LINK 
+href="Images/tomogas.css" rel=stylesheet>
+<SCRIPT language=JavaScript 
+src="Images/openMenu.js"> </SCRIPT>
+
+<SCRIPT language=JavaScript type=text/javascript>
+	
+function glight()
+{
+document.one.src='images/glight.gif';
+}
+		</SCRIPT>
+
+
+
+    <style type="text/css">
+        .style1
+        {
+            height: 40px;
+        }
+        body
+        {
+            background-image:linear-gradient(to top, cyan, purple);
+            background-repeat:no-repeat;
+            background-size:cover;
+            height: 100vh;
+        }
+    </style>
+
+
+
+</HEAD>
+<BODY leftMargin=0 /*background="Images/1024-back1.jpg"*/ topMargin=0 onload=glight();>
+<form id="form1" runat="server">
+
+      <asp:ScriptManager ID="ScriptManager1" runat="server">
+      </asp:ScriptManager>
+<TABLE cellSpacing=0 cellPadding=0 width=780 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff 
+        border=0><TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="25%" height=153>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG style="WIDTH: 196px; HEIGHT: 101px" height=101 
+                        src="Images/home_01.jpg" 
+                        width=196></TD></TR>
+                    <TR>
+                      <TD height=45><IMG height=45 
+                        src="Images/home_05.jpg" 
+                        width=192></TD></TR></TBODY></TABLE></TD>
+                <TD vAlign=top width="75%">
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width="32%"><IMG height=122 
+                              src="Images/home_021.jpg" 
+                              width=190></TD>
+                            <TD width="1%"><IMG height=122 
+                              src="Images/home_033.jpg" 
+                              width=195></TD>
+                            <TD width="67%"><A 
+                              href="#"><IMG 
+                              style="WIDTH: 200px; HEIGHT: 122px" height=122 
+                              src="Images/home_041.jpg" 
+                              width=200 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD bgColor=lightgrey height=30>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD bgColor=lightgrey height=25>
+                              <TABLE style="WIDTH: 587px; HEIGHT: 24px" 
+                              cellSpacing=0 cellPadding=0 width=587 border=0>
+                                <TBODY>
+                                <TR>
+                                <TD style="HEIGHT: 1px" width="20%" height=1>
+                                <DIV align=center><FONT color=#ffffff><A 
+                                class=menuItem 
+                                href="frmHome.aspx">Home</A></FONT></DIV></TD>
+                                <TD style="HEIGHT: 1px" width="20%">
+                                <DIV align=center><FONT color=#ffffff><A 
+                                class=menuItem 
+                                href="frmAboutUs.aspx"> 
+                                About Us</A></FONT></DIV></TD>
+                                <TD style="HEIGHT: 1px" width="20%">
+                                <DIV align=center><FONT color=#ffffff><A 
+                                class=menuItem 
+                                href="frmContactUs.aspx">Contact Us</A> 
+                                </FONT><FONT color=#ffffff></FONT></DIV></TD>
+                                <TD style="HEIGHT: 1px" width="20%">
+                                <DIV align=center><FONT color=#ffffff><A 
+                                class=menuItem 
+                                href="frmConsumerRegistration.aspx">Registration
+                              
+                                </A></FONT></DIV></TD></FONT> 
+                                </DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD vAlign=top width="26%">
+                  <TABLE cellSpacing=0 cellPadding=0 width=195 border=0>
+                    <TBODY>
+                    <TR>
+                      <TD vAlign=top bgColor=#a2bbfa>
+                        <TABLE cellSpacing=0 cellPadding=0 width="98%" 
+                        align=center border=0>
+                          <TBODY>
+                          <TR>
+                            <TD vAlign=top>
+                              <TABLE id=main cellSpacing=0 cellPadding=0 
+                              width=189 align=center border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                background="Images/backmm.gif" 
+                                height=37>
+                                <TABLE height=30 cellSpacing=0 cellPadding=0 
+                                width="100%" border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=30 height=20>
+                                <DIV align=center><IMG height=13 
+                                src="Images/glight.gif" 
+                                width=15 name=one></DIV></TD>
+                                <TD width=161 height=20><A class=buttonlink 
+                                href="Consumer/frmConsumerHome.aspx"><FONT 
+                                color=dimgray>Consumer</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR style="DISPLAY: none">
+                                <TD vAlign=top>
+                                <DIV align=right>
+                                <TABLE id=software cellSpacing=0 cellPadding=0 
+                                width="100%" bgColor=#cfdbfb border=0>
+                                <TBODY>
+                                <TR>
+                                <TD vAlign=top>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width="15%" height=30>
+                                <DIV align=center><IMG height=11 
+                                src="Images/arrow.gif" 
+                                width=10></DIV></TD>
+                                <SCRIPT language=JavaScript>
+<!--
+function mmLoadMenus() {
+  if (window.mm_menu_0908130359_0) return;
+        window.mm_menu_0908130359_0 = new Menu("root",42,18,"Verdana, Arial, Helvetica, sans-serif",12,"#000000","#FFFFFF","#809BE0","#809BE0","left","middle",3,0,1000,-5,7,true,false,true,0,false,false);
+  mm_menu_0908130359_0.addMenuItem("HP","location='NewLogin_hp.aspx'");
+  mm_menu_0908130359_0.addMenuItem("BP","location='NewLogin_bp.aspx'");
+  mm_menu_0908130359_0.addMenuItem("IOC","location='NewLogin_ioc.aspx'");
+   mm_menu_0908130359_0.fontWeight="bold";
+   mm_menu_0908130359_0.hideOnMouseOut=true;
+   mm_menu_0908130359_0.bgColor='#555555';
+   mm_menu_0908130359_0.menuBorder=1;
+   mm_menu_0908130359_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0908130359_0.menuBorderBgColor='#777777';
+            window.mm_menu_0908151800_0 = new Menu("root",42,18,"Verdana, Arial, Helvetica, sans-serif",12,"#000000","#FFFFFF","#809BE0","#809BE0","left","middle",3,0,1000,-5,7,true,false,true,0,false,false);
+  mm_menu_0908151800_0.addMenuItem("HP","location='Customer_Registration_hp.aspx'");
+  mm_menu_0908151800_0.addMenuItem("BP","location='Customer_Registration_bp.aspx'");
+  mm_menu_0908151800_0.addMenuItem("IOC","location='Customer_Registration_ioc.aspx'");
+   mm_menu_0908151800_0.fontWeight="bold";
+   mm_menu_0908151800_0.hideOnMouseOut=true;
+   mm_menu_0908151800_0.bgColor='#555555';
+   mm_menu_0908151800_0.menuBorder=1;
+   mm_menu_0908151800_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_0908151800_0.menuBorderBgColor='#777777';
+
+mm_menu_0908151800_0.writeMenus();
+} // mmLoadMenus()
+//-->
+																												</SCRIPT>
+
+                                <SCRIPT language=JavaScript 
+                                src="Images/mm_menu.js"></SCRIPT>
+                                <TD><A id=link1 
+                                onmouseover="MM_showMenu(window.mm_menu_0908130359_0,280,200,null,'link5')" 
+                                onmouseout=MM_startTimeout(); 
+                                href="Consumer/frmConsumerConnectionDetails.aspx" 
+                                name=link1><FONT color=dimgray>Registered 
+                                Consumer</FONT></A></TD></FONT></TR>
+                                <TR bgColor=#3366cc>
+                                <TD style="HEIGHT: 1px" colSpan=2></TD></TR>
+                                <TR>
+                                <TD height=30>
+                                <DIV align=center><IMG height=11 
+                                src="Images/arrow.gif" 
+                                width=10></DIV></TD>
+                                <TD><A id=link1 
+                                onmouseover="MM_showMenu(window.mm_menu_0908151800_0,240,240,null,'link4')" 
+                                onmouseout=MM_startTimeout(); 
+                                href="frmConsumerRegistration.aspx"  
+                                name=link1><FONT color=dimgray>New 
+                                Consumer</FONT></A></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+                                <TR>
+                                <TD 
+                                background="Images/backmm.gif" 
+                                height=37>
+                             <TABLE height=26 cellSpacing=0 cellPadding=0 
+                                width="100%" border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=30 height=26>
+                                <DIV align=center><IMG id=eleven height=13 
+                                src="Images/glight.gif" 
+                                width=15 name=eleven></DIV></TD>
+                                <TD width=163 height=26><A class=buttonlink 
+                                href="Distributor/frmDistHome.aspx"><FONT 
+                                color=dimgray>Distributor</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR style="DISPLAY: none">
+                                <TD height=92>
+                                <DIV align=right>
+                                <TABLE id=Eng cellSpacing=0 cellPadding=0 
+                                width="100%" bgColor=#cfdbfb border=0>
+</TABLE></DIV></TD></TR>
+                                <TR style="DISPLAY: none">
+                                <TD>
+                                <DIV align=right>
+                                <TABLE id=WD cellSpacing=0 cellPadding=0 
+                                width="100%" bgColor=#cfdbfb border=0>
+                                <TBODY>
+                                <TR>
+                                <TD>
+                                <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width="15%" height=30>
+                                <DIV align=center><IMG height=11 
+                                src="Images/arrow.gif" 
+                                width=10></DIV></TD>
+                                <TD width="85%"><FONT color=#0033cc><A 
+                                class=menu 
+                                href="#">HP</A></FONT></TD></TR>
+                                <TR bgColor=#3366cc>
+                                <TD colSpan=2 height=1></TD></TR>
+                                <TR>
+                                <TD height=30>
+                                <DIV align=center><IMG height=11 
+                                src="Images/arrow.gif" 
+                                width=10></DIV></TD>
+                                <TD><FONT color=#0033cc><A class=menu 
+                                href="#">BP</A></FONT></TD></TR>
+                                <TR bgColor=#3366cc>
+                                <TD colSpan=2 height=1></TD></TR>
+                                <TR>
+                                <TD height=30>
+                                <DIV align=center><IMG height=11 
+                                src="Images/arrow.gif" 
+                                width=10></DIV></TD>
+                                <TD><FONT color=#0033cc><A class=menu 
+                                href="#">Indane</A></FONT></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+                                <TR>
+                                <TD  background="Images/backmm.gif" 
+                                height=37>
+                               <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=30>
+                                <DIV align=center><IMG id=four height=13 
+                                src="Images/glight.gif" 
+                                width=15 name=four></DIV></TD>
+                                <TD width=161 height=30><A class=buttonlink 
+                                onclick="openMenu(7,'four');" 
+                                href="Admin/frmAdmin.aspx"><FONT 
+                                color=dimgray>Administrator</FONT></A></TD></TR></TBODY></TABLE></TD></TR>
+                                <TR style="DISPLAY: none">
+                                <TD>
+                                <TABLE id=uu height=18 cellSpacing=0 
+                                cellPadding=0 width="88%" align=center border=0>
+                                <TBODY>
+                                <TR>
+                                <TD 
+                                height=2></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+                          <TR>
+                            <TD><IMG 
+                              src="Images/toll_free_195x72.gif"></TD></TR>
+                          <TR>
+                            <TD vAlign=top>
+                            <div>
+                            <asp:Image ID="img1" runat="server" Width="193px"  Height="193px" />   
+                                <cc1:SlideShowExtender ID="img1_SlideShowExtender" runat="server" 
+                                    Enabled="True" SlideShowServiceMethod="GetSlides" PlayInterval="1000"   AutoPlay="true"   SlideShowServicePath="" 
+                                    TargetControlID="img1" Loop="true"   UseContextKey="True">
+                                </cc1:SlideShowExtender></div>
+                             </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD>
+                <TD vAlign=top width="74%">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                </TD></TR></TBODY></TABLE>
+            <TABLE height=70 cellSpacing=0 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD 
+                background="Images/bottom_01.jpg" class="style1">
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD height=20>
+                        <TABLE height=19 cellSpacing=0 cellPadding=0 width="74%" 
+                        align=right border=0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <MARQUEE><A class=slink >
+                              <FONT 
+                              color=#000000>Book your Gas Today ! Register 
+                              Now</FONT></A><FONT color=#000000> :: <A 
+                              class=slink 
+                              href="#">Refill 
+                              Booking Services</A> :: <A class=slink 
+                              href="#">Receipes</A> 
+                              :: <A class=slink 
+                              href="#">Safety 
+                              Tips</A> :: <A class=slink 
+                              href="#">Consumer 
+                              Support</A> :: <A class=slink 
+                              href="#">New exicting 
+                              offers</A>:: <A class=slink 
+                              href="#" >
+                               
+                             </A></FONT></MARQUEE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD style="HEIGHT: 28px" bgColor=lightgrey height=28>
+                  <DIV align=center><FONT color=#0033cc size=1><A 
+                  href="#" target=#></A>  © Copyright  All Rights 
+                  Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR></FONT></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  </form>  
+                  </BODY></HTML>
