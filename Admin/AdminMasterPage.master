@@ -1,0 +1,145 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Admin_AdminMasterPage" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>OnLine Gas Booking System</title>
+
+<script language="JavaScript" type="text/javascript">
+	
+function glight()
+{
+document.one.src='../Images/glight.gif';
+}
+		</script>
+        <style type="text/css">
+        .style1
+        {
+            height: 40px;
+        }
+        body
+        {
+           
+     
+            background-image:linear-gradient(to top, cyan, purple);
+            background-repeat:no-repeat;
+            background-size:cover;
+            height: 100vh;
+        }
+        </style>
+
+
+    </head>
+<body leftMargin=0 
+/*background="../Images/1024-back1.jpg"*/ 
+topMargin=0 onload=glight();>
+<form id="form1" runat=server>
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<table cellSpacing=0 cellPadding=0 width=780 align=center border=0>
+  <tbody>
+  <tr>
+    <td vAlign=top>
+      <table cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff 
+        border=0><tbody>
+        <tr>
+          <td>
+            <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <tbody>
+              <tr>
+                <td width="25%" height=153>
+                  <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <tbody>
+                    <tr>
+                     <td><img style="WIDTH: 196px; HEIGHT: 101px" height=101 
+                        src="../Images/home_01.jpg" 
+                        width=196></TD></TR>
+                    <tr>
+                      <td height=45><img height=45 
+                        src="../Images/home_05.jpg" 
+                        width=192></td></tr></tbody></table></td>
+                <td vAlign=top width="75%">
+                  <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <tbody>
+                    <tr>
+                      <td>
+                        <table cellSpacing=0 cellPadding=0 width="100%" border=0>
+                          <tbody>
+                          <tr>
+                            <td width="32%"><img height=122 
+                              src="../Images/home_021.jpg" 
+                              width=190></TD>
+                            <td width="1%"><IMG height=122 
+                              src="../Images/home_033.jpg" 
+                              width=195></TD>
+                            <td width="67%"><A 
+                              href="#"><IMG 
+                              style="WIDTH: 200px; HEIGHT: 122px" height=122 
+                              src="../Images/home_041.jpg" 
+                              width=200 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD bgColor=lightgrey height=30>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD align="center"   bgColor=lightgrey height=25>
+                              
+                              <asp:Menu ID="Adminmenu" runat="server" Orientation="Horizontal" Width="500px" 
+                                    Font-Bold="True" ForeColor="Black" StaticEnableDefaultPopOutImage="False">
+                                  <StaticMenuItemStyle ForeColor="Black" />
+                                  <Items>
+                                      <asp:MenuItem Text="AdminStration" Value="AdminStration" Selectable="False">
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmManageState.aspx" Text="State" 
+                                              Value="State"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmDistrict.aspx" Text="District" 
+                                              Value="District"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmCity.aspx" Text="City" Value="City">
+                                          </asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem Text="Registration" Value="Registration" Selectable="False">
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmAgencyRegistration.aspx" 
+                                              Text="Agency Registration" Value="Agency Registration"></asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem Text="Manage" Value="Manage" Selectable="False">
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmManageCylinders.aspx" Text="Cylinder" 
+                                              Value="Cylinder"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmConnectionType.aspx" Text="Connection" 
+                                              Value="Connection"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmTransferRequest.aspx" 
+                                              Text="Transfer Requests" Value="Transfer Requests"></asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem Text="Reports" Value="Reports" Selectable="False">
+                                          <asp:MenuItem Text="Agency Reports" Value="Agency Reports" 
+                                              NavigateUrl="~/Admin/frmAgencyReports.aspx"></asp:MenuItem>
+                                          <asp:MenuItem Text="Consumer" Value="Consumer" 
+                                              NavigateUrl="~/Admin/frmConsumersReports.aspx"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmShowFeedBack.aspx" Text="Feed Back" 
+                                              Value="Feed Back"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Admin/frmShowYearWiseConneciton.aspx" 
+                                              Text="Year Wise Connections" Value="Year Wise Connections"></asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem NavigateUrl="~/frmHome.aspx" Text="Log Out" Value="Log Out">
+                                      </asp:MenuItem>
+                                  </Items>
+                                </asp:Menu>  
+                              </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            
+            <TABLE height=70 cellSpacing=0 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD valign="top">
+                <div style="height:400px">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       
+                  </asp:ContentPlaceHolder></div>
+                  </TD></TR>
+                 
+              <TR>
+                <TD style="HEIGHT: 28px" bgColor=lightgrey height=28>
+                  <DIV align=center><FONT color=#0033cc size=1>&nbsp;© Copyright All Rights 
+                  Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  &nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  </form>  
+                  </BODY></HTML>

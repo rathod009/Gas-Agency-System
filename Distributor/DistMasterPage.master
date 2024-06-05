@@ -1,0 +1,135 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="DistMasterPage.master.cs" Inherits="Distributor_DistMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML><HEAD id="HEAD1" runat="server"><TITLE>Gas Agency System</TITLE>
+
+<SCRIPT language=JavaScript 
+
+
+<SCRIPT language=JavaScript type=text/javascript>
+	
+  
+function glight()
+{
+document.one.src='../Images/glight.gif';
+}
+		</SCRIPT>
+         <style type="text/css">
+        .style1
+        {
+            height: 40px;
+        }
+        body
+        {
+           
+     
+            background-image:linear-gradient(to top, cyan, purple);
+            background-repeat:no-repeat;
+            background-size:cover;
+            height: 100vh;
+        }
+        </style>
+
+
+
+
+
+    </HEAD><BODY leftMargin=0 /*background="../Images/1024-back1.jpg"*/ topMargin=0 onload=glight();>
+<form id="form1" runat=server>
+<asp:ScriptManager ID="ScriptManager1" runat="server">
+</asp:ScriptManager>
+<TABLE cellSpacing=0 cellPadding=0 width=780 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" bgColor=#ffffff 
+        border=0><TBODY>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD width="25%" height=153>
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD><IMG style="WIDTH: 196px; HEIGHT: 101px" height=101 
+                        src="../Images/gas3.jpg" 
+                        width=196></TD></TR>
+                    <TR>
+                      <TD height=45><IMG height=45 
+                        src="../Images/home_05.jpg" 
+                        width=192></TD></TR></TBODY></TABLE></TD>
+                <TD vAlign=top width="75%">
+                  <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+                    <TBODY>
+                    <TR>
+                      <TD>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD width="32%"><IMG height=122 
+                              src="../Images/home_021.jpg" 
+                              width=190></TD>
+                            <TD width="1%"><IMG height=122 
+                              src="../Images/home_033.jpg" 
+                              width=195></TD>
+                            <TD width="67%"><A 
+                              href="#"><IMG 
+                              style="WIDTH: 200px; HEIGHT: 122px" height=122 
+                              src="../Images/home_041.jpg" 
+                              width=200 border=0></A></TD></TR></TBODY></TABLE></TD></TR>
+                    <TR>
+                      <TD bgColor=lightgrey height=30>
+                        <TABLE cellSpacing=0 cellPadding=0 width="100%" 
+border=0>
+                          <TBODY>
+                          <TR>
+                            <TD align="center"   bgColor=lightgrey height=25>
+                              
+                              <asp:Menu ID="Distmenu" runat="server" Orientation="Horizontal" Width="500px" 
+                                    Font-Bold="True" ForeColor="Black" StaticEnableDefaultPopOutImage="False">
+                                  <StaticMenuItemStyle ForeColor="Black" />
+                                  <Items>
+                                      <asp:MenuItem NavigateUrl="~/Distributor/frmUpdateProfile.aspx" Text="Profile" 
+                                          Value="Profile"></asp:MenuItem>
+                                      <asp:MenuItem Text="Requests" Value="Requests" Selectable="False">
+                                          <asp:MenuItem NavigateUrl="~/Distributor/frmConsumerNewConnection.aspx" 
+                                              Text="Connection" Value="Connection"></asp:MenuItem>
+                                          <asp:MenuItem NavigateUrl="~/Distributor/frmUseGasBookingRequest.aspx" 
+                                              Text="Gas Booking" Value="Gas Booking"></asp:MenuItem>
+                                          <asp:MenuItem Text="Transfer" Value="Transfer" 
+                                              NavigateUrl="~/Distributor/frmLocationTransferRequest.aspx"></asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem Text="Feed Back" Value="Feed Back" 
+                                          NavigateUrl="~/Distributor/frmDFeedBack.aspx"></asp:MenuItem>
+                                      <asp:MenuItem Text="Reports" Value="Reports" Selectable="False">
+                                          <asp:MenuItem NavigateUrl="~/Distributor/frmConsumerReports.aspx" 
+                                              Text="Consumer" Value="Consumer"></asp:MenuItem>
+                                      </asp:MenuItem>
+                                      <asp:MenuItem Text="Log Out" Value="Log Out" NavigateUrl="~/frmHome.aspx"></asp:MenuItem>
+                                  </Items>
+                                </asp:Menu>  
+                              </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD vAlign=top>
+            
+            <TABLE height=70 cellSpacing=0 cellPadding=0 width="100%" 
+              border=0><TBODY>
+              <TR>
+                <TD valign="top">
+                <div style="height:400px">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                       
+                  </asp:ContentPlaceHolder></div>
+                  </TD></TR>
+                 
+              <TR>
+                <TD style="HEIGHT: 28px" bgColor=lightgrey height=28>
+                  <DIV align=center><FONT color=#0033cc size=1>&nbsp;© Copyright All Rights 
+                  Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                  &nbsp;&nbsp;&nbsp;</FONT></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                  </form>  
+                  </BODY></HTML>
